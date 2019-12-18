@@ -1,7 +1,7 @@
 body {
     background: #dddddd;
     box-sizing: border-box;
-    font-color: #777777;
+    color: #777777;
 }
 
 /* header */
@@ -87,6 +87,9 @@ footer{
     background: #666666;
     border-top: 5px #4aaaa5 solid;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
 }
 
 footer p {
@@ -149,7 +152,7 @@ form input {
 
 #form-message {
     width: 90%;
-    border: 2px #dddddd solid;
+    border: 1px #dddddd solid;
     margin: 0 auto;
 }
 
