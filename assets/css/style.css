@@ -71,7 +71,7 @@ header li a:hover {
     float: left;
 }
 
-.container p {
+.container p.bio{
     font-size: 20px;
     margin: 30px;
     line-height: 1.5rem;
@@ -131,4 +131,39 @@ footer p {
 
 .box-2 {
     background: url('');
+}
+
+/* contact form  */
+
+form {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+form input {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 5px;
+}
+
+#form-message {
+    width: 90%;
+    border: 2px #dddddd solid;
+    margin: 0 auto;
+}
+
+form p{
+    width: 90%;
+    margin: 10px auto;
+    color: #777;
+}
+
+.submit {
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    background: #4aaaa5;
+    font-size: 15px;
+    margin: 50px auto;
 }
