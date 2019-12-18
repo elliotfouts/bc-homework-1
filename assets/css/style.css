@@ -1,0 +1,50 @@
+body {
+    background: #dddddd;
+    box-sizing: border-box;
+    font-color: #777777;
+}
+
+/* header */
+
+header {
+    height: 75px;
+    width: 100%;
+    background: #fff;
+    border-bottom: 3px #cccccc solid;
+}
+
+.header-container {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 30px;
+    background: #4aaaa5;
+    text-align: center;
+    padding: 23px;
+    float: left;
+}
+
+ul {
+    float: right;
+    display: flex;
+    margin-top: 20px;
+}
+
+header li {
+
+}
+
+header li a{
+    text-decoration: none;
+    color: #777777;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+header li a:hover {
+    color: #4aaaa5;
+}
