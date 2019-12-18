@@ -76,3 +76,19 @@ header li a:hover {
     margin: 30px;
     line-height: 1.5rem;
 }
+
+/* footer */
+
+footer{
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    background: #666666;
+    border-top: 5px #4aaaa5 solid;
+    text-align: center;
+}
+
+footer p {
+    font-size: 15px;
+    margin: 20px;
+}
