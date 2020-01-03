@@ -1,7 +1,18 @@
-body {
-    background: #dddddd;
+
+/* global elements */
+
+* {
     box-sizing: border-box;
+}
+
+body {
+    background: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #777777;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* header */
@@ -39,9 +50,15 @@ header li a{
     color: #777777;
     font-size: 25px;
     margin: 0 10px;
+    transition: color 500ms;
 }
 
 header li a:hover {
+    color: #4aaaa5;
+}
+
+header li a:focus {
+    outline: none;
     color: #4aaaa5;
 }
 
@@ -49,7 +66,6 @@ header li a:hover {
 
 .container {
     width: 960px;
-    height: 600px;
     background: white;
     overflow: hidden;
     margin: 30px auto;
@@ -87,9 +103,7 @@ footer{
     background: #666666;
     border-top: 5px #4aaaa5 solid;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    z-index: 2;
+    margin-top: auto;
 }
 
 footer p {
@@ -100,41 +114,59 @@ footer p {
 /* portfolio container  */
 
 .image-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
 }
 
 .box {
     position: relative;
-    margin: 20px;
+    overflow: hidden;
 }
 
 .box img {
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
     margin: 0;
 }
 
-.banner {
-    height: 30px;
-    width: 200px;
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-    z-index: 1;
+.box:before{
+    content: '';
     background: #4aaaa5;
     color: #fff;
-    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    z-index: 2;
+    padding: 1rem;
+    font-size: 1.3rem;
+    box-sizing: border-box;
 }
 
-.box-1{
-    background: url('');
-
+.box-one:before {
+    content: "Hangman";
 }
 
-.box-2 {
-    background: url('');
+.box-two:before {
+    content: "RPG Game";
 }
+
+.box-three:before {
+    content: "Trivia Game";
+}
+
+.box-four:before {
+    content: "UCLA Info Widget";
+}
+
+.box-five:before {
+    content: "Rock Paper Scissors";
+}
+
+
 
 /* contact form  */
 
@@ -148,12 +180,23 @@ form input {
     width: 90%;
     margin: 0 auto;
     padding: 10px 5px;
+    transition: border 500ms;
+}
+
+form input:focus {
+    outline: none;
+    border: 1px #777777 solid;
 }
 
 #form-message {
     width: 90%;
     border: 1px #dddddd solid;
     margin: 0 auto;
+}
+
+#form-message:focus {
+    outline: none;
+    border: 1px #777777 solid;
 }
 
 form p{
@@ -169,4 +212,14 @@ form p{
     background: #4aaaa5;
     font-size: 15px;
     margin: 50px auto;
+    transition: background 500ms;
+}
+
+.submit:hover {
+    background: #777777;
+}
+
+.submit:focus {
+    outline: none;
+    background: #777777;
 }
